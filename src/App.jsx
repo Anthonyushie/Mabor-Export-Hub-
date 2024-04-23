@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import Root from "./layouts/Root";
-import { About, Contact, Home, Services } from "./pages";
+import { About, Contact, Home } from "./pages";
 
 function App() {
 	const router = createBrowserRouter(
@@ -18,7 +18,6 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path="about" element={<About />} />
 					<Route path="contact" element={<Contact />} />
-					<Route path="services" element={<Services />} />
 				</Route>
 			</>,
 		),
