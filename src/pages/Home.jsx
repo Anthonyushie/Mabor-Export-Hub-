@@ -62,7 +62,7 @@ const Home = () => {
             </div>
 
             <div className="cardcont">
-              <div className="icon">
+              <div className="icon2">
                 <FaHandHolding fontSize={"3rem"} />
               </div>
               <div className="text">
@@ -74,7 +74,7 @@ const Home = () => {
             </div>
 
             <div className="cardcont">
-              <div className="icon">
+              <div className="icon3">
                 <FaHands fontSize={"3rem"} />
               </div>
               <div className="text">
