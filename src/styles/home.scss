@@ -81,6 +81,78 @@
       padding-bottom: 20px;
     }
 
+    .homecards-cont {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: center;
+      .cardcont {
+        background-color: rgb(240, 240, 240);
+        width: 100%;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        gap: 20px;
+
+
+
+       
+        .icon {
+          background-color: rgb(177, 170, 240);
+          padding: 20px;
+          height: fit-content;
+          width: fit-content;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px auto;
+        }
+        .icon2 {
+          background-color: rgb(170, 240, 217);
+          padding: 20px;
+          height: fit-content;
+          width: fit-content;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px auto;
+        }
+        .icon3 {
+          background-color: rgb(170, 238, 240);
+          padding: 20px;
+          height: fit-content;
+          width: fit-content;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px auto;
+        }
+       
+    
+        
+
+   
+		.icon {
+			background-color: rgb(177, 170, 240);
+			padding: 20px;
+			height: fit-content;
+			width: fit-content;
+			border-radius: 5px;
+			display: flex;
+			// align-items: center;
+			// justify-content: center;
+			// margin: 0px auto;
+		}
+
+        & p {
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
 
