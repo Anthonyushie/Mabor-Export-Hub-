@@ -198,7 +198,11 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<div className="footer">
+				<h4>©Mabor-Export-Hub 2024. All rights reserved</h4>
+			</div>
 		</div>
+		
 	);
 };
 
