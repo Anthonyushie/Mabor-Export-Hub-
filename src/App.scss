@@ -1,7 +1,38 @@
 /** @format */
+// =======================
+// ==== RESPNSIVENESS ====
+// =======================
+
+@mixin responsiveness($breakpoint) {
+	@if ($breakpoint == medium) {
+		@media (width <= 990px) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == tab) {
+		@media (width <= 820px) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == small) {
+		@media (width <= 575px) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == xs) {
+		@media (width <= 425px) {
+			@content;
+		}
+	}
+}
+
 .navwrp {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 20px 4%;
 
 	.navlogo {
@@ -9,11 +40,13 @@
 
 		& img {
 			object-fit: cover;
+			@include responsiveness(medium) {
+				width: 60%;
+			}
 		}
 	}
 }
 .navconts {
-	margin: 0px auto;
 
 	.navitems {
 		display: flex;
@@ -21,10 +54,15 @@
 		align-items: center;
 		gap: 25px;
 		// background-color: rgba(207, 206, 206, 0.226);
-		background-color: rgb(29, 29, 29);
+		// background-color: rgb(29, 29, 29);
 		backdrop-filter: blur(8px);
 		padding: 20px;
 		border-radius: 40px;
+
+		// =====> RESPONSIVENESS =====>
+		@include responsiveness(medium) {
+			display: none;
+		}
 
 		& a {
 			text-decoration: none;

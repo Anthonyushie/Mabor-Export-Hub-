@@ -1,0 +1,34 @@
+.contact-wrp {
+  // background-color: rgb(226, 226, 255);
+
+  .contactcont {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .contactlft {
+      background-color: rgb(235, 235, 235);
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & img {
+        width: 80%;
+      }
+    }
+
+    .contactrght {
+      width: 50%;
+      // background-color: yellowgreen;
+      padding: 20px;
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}

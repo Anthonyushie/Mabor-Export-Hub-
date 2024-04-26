@@ -1,20 +1,102 @@
 /** @format */
+// =======================
+// ==== RESPNSIVENESS ====
+// =======================
 
+@mixin responsiveness($breakpoint) {
+	@if ($breakpoint == medium) {
+		@media (width <= 990px) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == tab) {
+		@media (width <= 820px) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == small) {
+		@media (width <= 575px) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == xs) {
+		@media (width <= 425px) {
+			@content;
+		}
+	}
+}
+
+// =====================
+// ==== ABOUT =========>
+// =====================
 .aboutwrp {
 	padding: 20px 4%;
 
 	.aboutitem {
 		display: flex;
 		align-items: center;
-    gap: 20px;
+    gap: 25px;
     margin: 0px auto;
 
     .aboutext {
       width: 55%;
+
+      & h1 {
+        font-size: 2.5rem;
+      }
+
+      & p {
+        padding: 20px 0px;
+        font-weight: 500;
+        font-size: 20px;
+      }
     }
 
     .aboutleft {
       width: 45%;
     }
 	}
+
+  .vision {
+    padding: 50px 0px;
+  }
+
+
+  // =========================
+  // ====== CORE VALUES ======
+  // =========================
+
+  .corevalues {
+    padding: 50px 0px;
+
+    .corevalueitems {
+      padding-top: 30px ;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .corevaluecard {
+        background-color: rgb(245, 245, 245);
+        padding: 20px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 20px;
+
+
+        & h2 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
