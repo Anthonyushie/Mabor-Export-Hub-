@@ -16,7 +16,6 @@ import {
 
 import { FaHandHoldingHand } from "react-icons/fa6";
 
-
 import { MdVerified } from "react-icons/md";
 
 import "../styles/home.scss";
@@ -69,32 +68,32 @@ const Home = () => {
 							</div>
 						</div>
 
-            <div className="cardcont">
-              <div className="icon2">
-                <FaHandHolding fontSize={"3rem"} />
-              </div>
-              <div className="text">
-                <p>
-                  We support clients to get sellers/buyers to get whatever local
-                  commodity they want to buy or sell.
-                </p>
-              </div>
-            </div>
+						<div className="cardcont">
+							<div className="icon2">
+								<FaHandHolding fontSize={"3rem"} />
+							</div>
+							<div className="text">
+								<p>
+									We support clients to get sellers/buyers to get whatever local
+									commodity they want to buy or sell.
+								</p>
+							</div>
+						</div>
 
-            <div className="cardcont">
-              <div className="icon3">
-                <FaHands fontSize={"3rem"} />
-              </div>
-              <div className="text">
-                <p>
-                  We work with our clients to meet and coerce with sellers of
-                  high repute.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+						<div className="cardcont">
+							<div className="icon3">
+								<FaHands fontSize={"3rem"} />
+							</div>
+							<div className="text">
+								<p>
+									We work with our clients to meet and coerce with sellers of
+									high repute.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			{/* ====================== */}
 			{/* ======= GALLERY ====== */}
@@ -198,11 +197,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="footer">
-				<h4>©Mabor-Export-Hub 2024. All rights reserved</h4>
-			</div>
 		</div>
-		
 	);
 };
 

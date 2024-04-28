@@ -38,65 +38,92 @@
 	.aboutitem {
 		display: flex;
 		align-items: center;
-    gap: 25px;
-    margin: 0px auto;
+		gap: 25px;
+		margin: 0px auto;
 
-    .aboutext {
-      width: 55%;
+		@include responsiveness(medium) {
+			flex-wrap: wrap;
+		}
 
-      & h1 {
-        font-size: 2.5rem;
-      }
+		.aboutext {
+			width: 55%;
 
-      & p {
-        padding: 20px 0px;
-        font-weight: 500;
-        font-size: 20px;
-      }
-    }
+			@include responsiveness(medium) {
+				width: 100%;
+			}
 
-    .aboutleft {
-      width: 45%;
-    }
+			& h1 {
+				font-size: 2.5rem;
+
+				@include responsiveness(xs) {
+					text-align: center;
+				}
+			}
+
+			& p {
+				padding: 20px 0px;
+				font-weight: 500;
+				font-size: 20px;
+			}
+		}
+
+		.aboutleft {
+			width: 45%;
+			@include responsiveness(medium) {
+				width: 100%;
+			}
+		}
 	}
 
-  .vision {
-    padding: 50px 0px;
-  }
+	.mission {
+		@include responsiveness(medium) {
+			flex-direction: column-reverse;
+		}
+	}
 
+	.vision {
+		padding: 50px 0px;
+	}
 
-  // =========================
-  // ====== CORE VALUES ======
-  // =========================
+	// =========================
+	// ====== CORE VALUES ======
+	// =========================
 
-  .corevalues {
-    padding: 50px 0px;
+	.corevalues {
+		padding: 50px 0px;
 
-    .corevalueitems {
-      padding-top: 30px ;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+		.corevalueitems {
+			padding-top: 30px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
 
-      .corevaluecard {
-        background-color: rgb(245, 245, 245);
-        padding: 20px;
-        width: 100%;
+			@include responsiveness(medium) {
+				grid-template-columns: repeat(2, 1fr);
+			}
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 20px;
+			@include responsiveness(small) {
+				grid-template-columns: repeat(1, 1fr);
+			}
 
+			.corevaluecard {
+				background-color: rgb(245, 245, 245);
+				padding: 20px;
+				width: 100%;
 
-        & h2 {
-          font-size: 1.5rem;
-          font-weight: 600;
-          text-align: center;
-        }
-      }
-    }
-  }
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				gap: 10px;
+				border-radius: 20px;
+
+				& h2 {
+					font-size: 1.5rem;
+					font-weight: 600;
+					text-align: center;
+				}
+			}
+		}
+	}
 }

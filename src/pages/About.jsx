@@ -15,7 +15,7 @@ import promote from "../assets/promote.png";
 const About = () => {
 	return (
 		<div className="aboutwrp">
-			<div className="aboutitem">
+			<div className="aboutitem mission">
 				<div className="aboutext">
 					<h1>OUR MISSIONS</h1>
 					<p>
